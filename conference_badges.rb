@@ -19,7 +19,9 @@ def assign_rooms(room_assignments)
 end
 
 def printer(attendees)
-  
+  if printer==attendees
+    puts badges<< "Hello, my name is #{name}."
+  elsif room_assignments
  end
 
 
