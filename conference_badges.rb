@@ -18,10 +18,16 @@ def assign_rooms(room_assignments)
  badges
 end
 
-def printer
-    puts badges<< "Hello, my name is #{name}."
-  elsif room_assignments
+def printer(attendees)
+   badges= batch_badge_creator(attendees)
+  badges.each do |names|
+    puts names
  end
+ room_number= assign_rooms(attendees)
+  room_number.each do |names|
+    puts names
+  end 
+end 
 
 
 
