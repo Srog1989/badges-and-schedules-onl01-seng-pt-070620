@@ -12,11 +12,16 @@ end
 
 def assign_rooms(room_assignments)
   badges=[]
-  room_assignments.each do|name|
-  room_assignments<< "Hello #{name}!"
+  room_assignments.each_with_index do|name, index|
+  badges<< "Hello, #{name}! You'll be assigned to room #{index+1}!"
  end
- room_assignments
+ badges
 end
 
+def printer(attendees)
+ end
 
 
+
+
+#{["Edsger", "Ada", "Charles", "Alan", "Grace", "Linus", "Matz"]}
